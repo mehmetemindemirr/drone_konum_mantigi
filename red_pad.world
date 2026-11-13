@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="minimal_world_replacement">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Kameralı Iris (ArduPilot SITL ile uyumlu). -->
+    <include>
+      <uri>model://iris_with_camera</uri>
+      <pose>0 0 0.195 0 0 0</pose>
+    </include>
+
+    <!--
+      Kirmizi inis alani: yaricap 1.0 m (sartname: 100 cm), kalinlik 1 cm.
+
+      Konum (5, 0): drone kalkis noktasinin 5 m "ilerisi".
+        Gazebo +X = Dogu = MAVROS yerel +x = drone'un baslangic yonu.
+      Pad'in yanal ofsetini denemek icin Y'yi degistir (orn. 5 0.5 0 ...).
+    -->
+    <model name="red_pad">
+      <static>true</static>
+      <pose>5 0 0 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <pose>0 0 0.005 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>1.0</radius>
+              <length>0.01</length>
+            </cylinder>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <pose>0 0 0.005 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>1.0</radius>
+              <length>0.01</length>
+            </cylinder>
+          </geometry>
+          <!-- Mat boya: parlak (specular) yansima yok. -->
+          <material>
+            <ambient>0.8 0 0 1</ambient>
+            <diffuse>0.8 0 0 1</diffuse>
+            <specular>0 0 0 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Gazebo penceresinde baslangic bakis acisi: drone ve pad gorunsun. -->
+    <gui>
+      <camera name="user_camera">
+        <pose>-6 -8 6 0 0.42 0.63</pose>
+      </camera>
+    </gui>
+  </world>
+</sdf>
