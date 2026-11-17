@@ -12,7 +12,11 @@ isler ve sonucu dondurur; baska bir sey yapmaz.
 from __future__ import annotations
 
 from typing import List, Optional, Protocol, Sequence
-
+""" burada Sequence sıralı eleman koleksiyonlarını ifade eder. tuple da olabilir liste de olabilir.
+Protocol ise -> bir interface tir. bizim ana görevimiz iniş alanı tespit etmek istiyor ama bunu
+bilmek zorunda değil.
+Optional -> bir değerin boş olabilmesine izin veren tip tanımıdır. 
+"""
 import cv2
 import numpy as np
 
