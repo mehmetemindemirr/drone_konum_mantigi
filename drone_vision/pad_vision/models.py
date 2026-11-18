@@ -46,7 +46,21 @@ class DetectorConfig:
     border_penalty: float = 0.6      # kareye tasan aday icin guven carpani
     min_confidence: float = 0.4      # bunun altindaki adaylar elenir
     max_candidates: int = 10         # renk basina incelenecek en buyuk blob sayisi
-
+"""Parametre	                Görevi	                  Mevcut değer
+    work_width	        Görüntünün işleneceği genişlik	        320   bu deger baslanic icin mantikli ama degistirelecek, havada detect edemeyebiliriz. 
+    morph_kernel_frac	Morfolojik işlem çekirdeğinin oranı 	0.01  goruntudeki gurultuleri temizlemek amaciyla kullanildi.
+    min_area_px	        Kabul edilecek minimum alan	            30
+    min_radius_px	    Minimum yarıçap	                        5
+    min_circularity	    Daireselliğin minimum değeri	        0.75  dairesel bir iniş alanı detect ediyoruz. 
+    min_solidity	    Dolu ve bütünlük oranı	                0.92
+    min_axis_ratio	    Elips eksen oranı	                    0.55
+    min_ellipse_iou	    Elips ile aday bölgenin örtüşmesi	    0.92
+    max_rect_fill	    Dikdörtgen doluluk üst sınırı	        0.93
+    size_tolerance	    Beklenen boyuttan sapma toleransı	    0.5
+    border_penalty	    Kenara taşan adayın güven puanı çarpanı	0.6
+    min_confidence	    Minimum güven puanı	                    0.4
+    max_candidates	    Renk başına incelenecek aday sayısı	    10
+"""
 
 @dataclass(frozen=True)
 class DetectionHint:
