@@ -1,0 +1,515 @@
+pi2@sancak-pi2:~$ python3 berk1.py
+[BAŞLAT] MAVROS başlatılıyor...
+[BAŞLAT] 4 saniye bekleniyor...[INFO] [launch]: All log files can be found below /home/pi2/.ros/log/2026-11-18-18-46-21-920807-sancak-pi2-1469
+[INFO] [launch]: Default logging verbosity is set to INFO
+[BAŞLAT] 3 saniye bekleniyor...[INFO] [mavros_node-1]: process started with pid [1472]
+[BAŞLAT] 2 saniye bekleniyor...[mavros_node-1] [INFO] [1795016783.450989596] [mavros_node]: Starting mavros_node container
+[mavros_node-1] [INFO] [1795016783.451302855] [mavros_node]: FCU URL: /dev/ttyS0:115200
+[mavros_node-1] [INFO] [1795016783.451352316] [mavros_node]: GCS URL:
+[mavros_node-1] [INFO] [1795016783.451383709] [mavros_node]: UAS Prefix: /uas1
+[mavros_node-1] [INFO] [1795016783.451410468] [mavros_node]: Starting mavros router node
+[mavros_node-1] [INFO] [1795016783.566332189] [mavros_router]: Built-in SIMD instructions: ARM NEON
+[mavros_node-1] [INFO] [1795016783.566566263] [mavros_router]: Built-in MAVLink package version: 2026.9.9
+[mavros_node-1] [INFO] [1795016783.566680807] [mavros_router]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous loweheiser marsh paparazzi standard stemstudios storm32 uAvionix
+[mavros_node-1] [INFO] [1795016783.566736476] [mavros_router]: MAVROS Router started
+[mavros_node-1] [INFO] [1795016783.567612060] [mavros_node]: Starting mavros uas node
+[BAŞLAT] 1 saniye bekleniyor...[mavros_node-1] [INFO] [1795016784.176613422] [mavros_router]: Requested to add endpoint: type: 0, url: /dev/ttyS0:115200
+[mavros_node-1] [INFO] [1795016784.176805976] [mavros_router]: Endpoint link[1000] created
+[mavros_node-1] [INFO] [1795016784.181636541] [mavros_router]: link[1000] opened successfully
+[mavros_node-1] [INFO] [1795016784.181813974] [mavros_router]: Requested to add endpoint: type: 2, url: /uas1
+[mavros_node-1] [INFO] [1795016784.181938205] [mavros_router]: Endpoint link[1001] created
+[mavros_node-1] [INFO] [1795016784.218353057] [mavros]: UAS Executor started, threads: 4
+[mavros_node-1] [WARN] [1795016784.218378129] [mavros]: plugin_denylist pattern 'image_pub' does not match any declared plugin
+[mavros_node-1] [WARN] [1795016784.218935611] [mavros]: plugin_denylist pattern 'vision_speed_estimate' does not match any declared plugin
+[mavros_node-1] [INFO] [1795016784.219024614] [mavros]: Plugin actuator_control ignored
+[mavros_node-1] [INFO] [1795016784.359603328] [mavros_router]: link[1000] detected remote address 1.1
+[mavros_node-1] [INFO] [1795016784.493040050] [mavros_router]: link[1001] opened successfully
+[mavros_node-1] [INFO] [1795016784.521300311] [mavros]: Plugin adsb created
+[mavros_node-1] [INFO] [1795016784.521735137] [mavros]: Plugin adsb initialized
+[mavros_node-1] [INFO] [1795016784.521819730] [mavros]: Plugin altitude ignored
+[mavros_node-1] [INFO] [1795016784.553005882] [mavros]: Plugin cam_imu_sync created
+[mavros_node-1] [INFO] [1795016784.553139619] [mavros]: Plugin cam_imu_sync initialized
+[mavros_node-1] [INFO] [1795016784.578888803] [mavros]: Plugin camera created
+[mavros_node-1] [INFO] [1795016784.579024986] [mavros]: Plugin camera initialized
+[mavros_node-1] [INFO] [1795016784.614940228] [mavros]: Plugin cellular_status created
+[mavros_node-1] [INFO] [1795016784.615061049] [mavros]: Plugin cellular_status initialized
+[mavros_node-1] [INFO] [1795016784.828196358] [mavros]: Plugin command created
+[mavros_node-1] [INFO] [1795016784.828362043] [mavros]: Plugin command initialized
+[mavros_node-1] [INFO] [1795016784.858977667] [mavros]: Plugin companion_process_status created
+[mavros_node-1] [INFO] [1795016784.859128545] [mavros]: Plugin companion_process_status initialized
+[mavros_node-1] [INFO] [1795016784.859171981] [mavros]: Plugin debug_value ignored
+[mavros_node-1] [INFO] [1795016784.901055007] [mavros.distance_sensor]: DS: rangefinder_pub: Loading config: id: 0
+[mavros_node-1] frame_id: lidar
+[mavros_node-1] field_of_view: 0.0
+[mavros_node-1] send_tf: false
+[mavros_node-1] sensor_position: {x: 0.0, y: 0.0, z: -0.1}
+[mavros_node-1] [INFO] [1795016784.921729537] [mavros.distance_sensor]: DS: rangefinder_sub: Loading config: subscriber: true
+[mavros_node-1] id: 1
+[mavros_node-1] orientation: PITCH_270
+[mavros_node-1] [INFO] [1795016784.924908170] [mavros]: Plugin distance_sensor created
+[mavros_node-1] [INFO] [1795016784.925093608] [mavros]: Plugin distance_sensor initialized
+[mavros_node-1] [INFO] [1795016784.964233051] [mavros]: Plugin esc_status created
+[mavros_node-1] [INFO] [1795016784.964767980] [mavros]: Plugin esc_status initialized
+[mavros_node-1] [INFO] [1795016785.001779648] [mavros]: Plugin esc_telemetry created
+[mavros_node-1] [INFO] [1795016785.001924201] [mavros]: Plugin esc_telemetry initialized
+[mavros_node-1] [INFO] [1795016785.051315540] [mavros]: Plugin fake_gps created
+[mavros_node-1] [INFO] [1795016785.051443898] [mavros]: Plugin fake_gps initialized
+[mavros_node-1] [INFO] [1795016785.051489019] [mavros]: Plugin ftp ignored
+[mavros_node-1] [INFO] [1795016785.111586016] [mavros]: Plugin geofence created
+[mavros_node-1] [INFO] [1795016785.111802929] [mavros]: Plugin geofence initialized
+
+[BAŞLAT] Servisler bekleniyor...
+
+[mavros_node-1] [INFO] [1795016785.218914708] [mavros]: Plugin gimbal_control created
+[mavros_node-1] [INFO] [1795016785.219093394] [mavros]: Plugin gimbal_control initialized
+[mavros_node-1] [INFO] [1795016785.337607191] [mavros]: Plugin global_position created
+[mavros_node-1] [INFO] [1795016785.337902394] [mavros]: Plugin global_position initialized
+[mavros_node-1] [INFO] [1795016785.400385212] [mavros]: Plugin gps_input created
+[mavros_node-1] [INFO] [1795016785.400541235] [mavros]: Plugin gps_input initialized
+[mavros_node-1] [INFO] [1795016785.463340324] [mavros]: Plugin gps_rtk created
+[mavros_node-1] [INFO] [1795016785.464534124] [mavros]: Plugin gps_rtk initialized
+[mavros_node-1] [INFO] [1795016785.527555463] [mavros]: Plugin gps_status created
+[mavros_node-1] [INFO] [1795016785.527764909] [mavros]: Plugin gps_status initialized
+[mavros_node-1] [INFO] [1795016785.607872978] [mavros]: Plugin guided_target created
+[mavros_node-1] [INFO] [1795016785.608095042] [mavros]: Plugin guided_target initialized
+[mavros_node-1] [INFO] [1795016785.608211800] [mavros]: Plugin hil ignored
+[mavros_node-1] [INFO] [1795016785.699553819] [mavros]: Plugin home_position created
+[mavros_node-1] [INFO] [1795016785.699712288] [mavros]: Plugin home_position initialized
+[mavros_node-1] [INFO] [1795016785.790129194] [mavros]: Plugin imu created
+[mavros_node-1] [INFO] [1795016785.790346903] [mavros]: Plugin imu initialized
+[mavros_node-1] [INFO] [1795016785.876257776] [mavros]: Plugin landing_target created
+[mavros_node-1] [INFO] [1795016785.876483065] [mavros]: Plugin landing_target initialized
+[mavros_node-1] [INFO] [1795016785.972999255] [mavros]: Plugin local_position created
+[mavros_node-1] [INFO] [1795016785.973213296] [mavros]: Plugin local_position initialized
+[mavros_node-1] [INFO] [1795016786.065496567] [mavros]: Plugin log_transfer created
+[mavros_node-1] [INFO] [1795016786.065710859] [mavros]: Plugin log_transfer initialized
+[mavros_node-1] [INFO] [1795016786.131405714] [mavros]: Plugin mag_calibration_status created
+[mavros_node-1] [INFO] [1795016786.131589321] [mavros]: Plugin mag_calibration_status initialized
+[mavros_node-1] [INFO] [1795016786.201076782] [mavros]: Plugin manual_control created
+[mavros_node-1] [INFO] [1795016786.201252218] [mavros]: Plugin manual_control initialized
+[mavros_node-1] [INFO] [1795016786.269806652] [mavros]: Plugin mocap_pose_estimate created
+[mavros_node-1] [INFO] [1795016786.269965115] [mavros]: Plugin mocap_pose_estimate initialized
+[mavros_node-1] [INFO] [1795016786.356551092] [mavros]: Plugin mount_control created
+[mavros_node-1] [INFO] [1795016786.356732457] [mavros]: Plugin mount_control initialized
+[mavros_node-1] [INFO] [1795016786.428717508] [mavros]: Plugin nav_controller_output created
+[mavros_node-1] [INFO] [1795016786.428913048] [mavros]: Plugin nav_controller_output initialized
+[mavros_node-1] [INFO] [1795016786.502133488] [mavros]: Plugin obstacle_distance created
+[mavros_node-1] [INFO] [1795016786.502310017] [mavros]: Plugin obstacle_distance initialized
+[mavros_node-1] [INFO] [1795016786.578580018] [mavros]: Plugin obstacle_distance_3d created
+[mavros_node-1] [INFO] [1795016786.578798775] [mavros]: Plugin obstacle_distance_3d initialized
+[mavros_node-1] [INFO] [1795016786.658318287] [mavros]: Plugin odometry created
+[mavros_node-1] [INFO] [1795016786.658483569] [mavros]: Plugin odometry initialized
+[mavros_node-1] [INFO] [1795016786.736507984] [mavros]: Plugin onboard_computer_status created
+[mavros_node-1] [INFO] [1795016786.736654607] [mavros]: Plugin onboard_computer_status initialized
+[mavros_node-1] [INFO] [1795016786.835388130] [mavros]: Plugin open_drone_id created
+[mavros_node-1] [INFO] [1795016786.835544259] [mavros]: Plugin open_drone_id initialized
+[mavros_node-1] [INFO] [1795016786.924067312] [mavros]: Plugin optical_flow created
+[mavros_node-1] [INFO] [1795016786.924241210] [mavros]: Plugin optical_flow initialized
+[mavros_node-1] [INFO] [1795016787.011947582] [mavros]: Plugin param created
+[mavros_node-1] [INFO] [1795016787.012148859] [mavros]: Plugin param initialized
+[mavros_node-1] [INFO] [1795016787.094463684] [mavros]: Plugin play_tune created
+[mavros_node-1] [INFO] [1795016787.094657994] [mavros]: Plugin play_tune initialized
+[mavros_node-1] [INFO] [1795016787.094723567] [mavros]: Plugin px4flow ignored
+[INFO] [1795016787.173089690] [mavros_takeoff_test]: set_mode servisi bekleniyor...
+[mavros_node-1] [INFO] [1795016787.216037177] [mavros]: Plugin rallypoint created
+[mavros_node-1] [INFO] [1795016787.216234896] [mavros]: Plugin rallypoint initialized
+[mavros_node-1] [INFO] [1795016787.304128038] [mavros]: Plugin rangefinder created
+[mavros_node-1] [INFO] [1795016787.306928240] [mavros]: Plugin rangefinder initialized
+[mavros_node-1] [INFO] [1795016787.403977419] [mavros]: Plugin rc_io created
+[mavros_node-1] [INFO] [1795016787.404170729] [mavros]: Plugin rc_io initialized
+[mavros_node-1] [INFO] [1795016787.491064471] [mavros]: Plugin setpoint_accel created
+[mavros_node-1] [INFO] [1795016787.491214627] [mavros]: Plugin setpoint_accel initialized
+[mavros_node-1] [INFO] [1795016787.596097823] [mavros]: Plugin setpoint_attitude created
+[mavros_node-1] [INFO] [1795016787.596257040] [mavros]: Plugin setpoint_attitude initialized
+[mavros_node-1] [INFO] [1795016787.706255577] [mavros]: Plugin setpoint_position created
+[mavros_node-1] [INFO] [1795016787.706560410] [mavros]: Plugin setpoint_position initialized
+[mavros_node-1] [INFO] [1795016787.825568942] [mavros]: Plugin setpoint_raw created
+[mavros_node-1] [INFO] [1795016787.825758861] [mavros]: Plugin setpoint_raw initialized
+[mavros_node-1] [INFO] [1795016787.945751024] [mavros]: Plugin setpoint_trajectory created
+[mavros_node-1] [INFO] [1795016787.945935458] [mavros]: Plugin setpoint_trajectory initialized
+[mavros_node-1] [INFO] [1795016788.052072917] [mavros]: Plugin setpoint_velocity created
+[mavros_node-1] [INFO] [1795016788.052237779] [mavros]: Plugin setpoint_velocity initialized
+[mavros_node-1] [INFO] [1795016788.165127850] [mavros]: Plugin sim_state created
+[mavros_node-1] [INFO] [1795016788.165392672] [mavros]: Plugin sim_state initialized
+[INFO] [1795016788.179437890] [mavros_takeoff_test]: set_mode servisi bekleniyor...
+[mavros_node-1] [INFO] [1795016788.345424933] [mavros]: Plugin sys_status created
+[mavros_node-1] [INFO] [1795016788.345721604] [mavros]: Plugin sys_status initialized
+[mavros_node-1] [INFO] [1795016788.451470727] [mavros.time]: TM: Timesync mode: MAVLINK
+[mavros_node-1] [INFO] [1795016788.479088365] [mavros]: Plugin sys_time created
+[mavros_node-1] [INFO] [1795016788.479317798] [mavros]: Plugin sys_time initialized
+[mavros_node-1] [INFO] [1795016788.582194556] [mavros]: Plugin tdr_radio created
+[mavros_node-1] [INFO] [1795016788.583559795] [mavros]: Plugin tdr_radio initialized
+[mavros_node-1] [INFO] [1795016788.710384694] [mavros]: Plugin terrain created
+[mavros_node-1] [INFO] [1795016788.711753990] [mavros]: Plugin terrain initialized
+[mavros_node-1] [INFO] [1795016788.833212650] [mavros]: Plugin trajectory created
+[mavros_node-1] [INFO] [1795016788.833424814] [mavros]: Plugin trajectory initialized
+[mavros_node-1] [INFO] [1795016788.949534355] [mavros]: Plugin tunnel created
+[mavros_node-1] [INFO] [1795016788.949703256] [mavros]: Plugin tunnel initialized
+[mavros_node-1] [INFO] [1795016789.060633007] [mavros]: Plugin vfr_hud created
+[mavros_node-1] [INFO] [1795016789.060805219] [mavros]: Plugin vfr_hud initialized
+[mavros_node-1] [INFO] [1795016789.060853502] [mavros]: Plugin vibration ignored
+[mavros_node-1] [INFO] [1795016789.183830513] [mavros]: Plugin vision_pose created
+[mavros_node-1] [INFO] [1795016789.184002484] [mavros]: Plugin vision_pose initialized
+[mavros_node-1] [INFO] [1795016789.308752460] [mavros]: Plugin vision_speed created
+[mavros_node-1] [INFO] [1795016789.308896826] [mavros]: Plugin vision_speed initialized
+════════════════════════════════════════
+Faz         : WAIT_CONNECT
+Bağlantı    : KOPUK
+Mod         :
+Armed       : False
+İrtifa      : VERİ YOK (hiçbir kaynaktan mesaj gelmiyor)
+Ham veriler : lidar=-  pose=-  rel_alt=-  vfr_hud=-
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016789.488170924] [mavros]: Plugin waypoint created
+[mavros_node-1] [INFO] [1795016789.488410076] [mavros]: Plugin waypoint initialized
+[mavros_node-1] [INFO] [1795016789.488469587] [mavros]: Plugin wheel_odometry ignored
+[mavros_node-1] [INFO] [1795016789.603923306] [mavros]: Plugin wind_estimation created
+[mavros_node-1] [INFO] [1795016789.604093165] [mavros]: Plugin wind_estimation initialized
+[mavros_node-1] [INFO] [1795016789.615027026] [mavros]: Built-in SIMD instructions: ARM NEON
+[mavros_node-1] [INFO] [1795016789.615147176] [mavros]: Built-in MAVLink package version: 2026.9.9
+[mavros_node-1] [INFO] [1795016789.615181304] [mavros]: Known MAVLink dialects: common ardupilotmega ASLUAV AVSSUAS all csAirLink cubepilot development icarous loweheiser marsh paparazzi standard stemstudios storm32 uAvionix
+[mavros_node-1] [INFO] [1795016789.615213597] [mavros]: MAVROS UAS via /uas1 started. MY ID 1.191, TARGET ID 1.1
+[mavros_node-1] [INFO] [1795016789.657548217] [mavros_router]: link[1001] detected remote address 1.191
+[mavros_node-1] [INFO] [1795016790.364504624] [mavros]: CON: Got HEARTBEAT, connected. FCU: ArduPilot
+[mavros_node-1] [INFO] [1795016790.365018319] [mavros.mission]: WP: detected enable_partial_push: 1
+[mavros_node-1] [WARN] [1795016790.371172710] [mavros.cmd]: CMD: Unexpected command 512, result 0
+[mavros_node-1] [INFO] [1795016790.377390611] [mavros.geofence]: GF: Using MISSION_ITEM_INT
+[mavros_node-1] [INFO] [1795016790.377606950] [mavros.rallypoint]: RP: Using MISSION_ITEM_INT
+[mavros_node-1] [INFO] [1795016790.377656639] [mavros.mission]: WP: Using MISSION_ITEM_INT
+[mavros_node-1] [INFO] [1795016790.377698065] [mavros.sys]: VER: 1.1: Capabilities         0x000000000000fbef
+[mavros_node-1] [INFO] [1795016790.377738805] [mavros.sys]: VER: 1.1: Flight software:     040603ff (92b0cd78)
+[mavros_node-1] [INFO] [1795016790.377771079] [mavros.sys]: VER: 1.1: Middleware software: 00000000 (        )
+[mavros_node-1] [INFO] [1795016790.377801093] [mavros.sys]: VER: 1.1: OS software:         00000000 (88b84600   AW  )
+[mavros_node-1] [INFO] [1795016790.377830236] [mavros.sys]: VER: 1.1: Board hardware:      00090000
+[mavros_node-1] [INFO] [1795016790.377859879] [mavros.sys]: VER: 1.1: VID/PID:             1209:5741
+[mavros_node-1] [INFO] [1795016790.377889763] [mavros.sys]: VER: 1.1: UID:                 0000000000000000
+[KOMUT] Telemetri akışı isteniyor...
+════════════════════════════════════════
+Faz         : WAIT_CONNECT
+Bağlantı    : BAĞLI
+Mod         : CMODE(4)
+Armed       : False
+İrtifa      : VERİ YOK (hiçbir kaynaktan mesaj gelmiyor)
+Ham veriler : lidar=-  pose=-  rel_alt=-  vfr_hud=-
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016790.548802947] [mavros.imu]: IMU: Raw IMU message used.
+[SONUÇ] Telemetri akışı 10 Hz olarak istendi
+
+[FAZ] WAIT_CONNECT -> GUIDED
+[mavros_node-1] [INFO] [1795016790.679402070] [mavros.rc]: RC_CHANNELS message detected!
+
+[FAZ] GUIDED -> ARM
+════════════════════════════════════════
+Faz         : ARM
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : False
+İrtifa      : 0.11 m  [pose-ham, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.11  rel_alt=0.11  vfr_hud=1284.43
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016791.716421152] [mavros.time]: TM: RTT too high for timesync: 55.27 ms.
+════════════════════════════════════════
+Faz         : ARM
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : False
+İrtifa      : 0.12 m  [pose-ham, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.12  rel_alt=0.12  vfr_hud=1284.43
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016792.816869824] [mavros.time]: TM: RTT too high for timesync: 55.84 ms.
+════════════════════════════════════════
+Faz         : ARM
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : False
+İrtifa      : 0.09 m  [pose-ham, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.09  rel_alt=0.09  vfr_hud=1284.41
+════════════════════════════════════════
+[KOMUT] Arm isteği gönderiliyor...
+[SONUÇ] Arm komutu kabul edildi
+[mavros_node-1] [WARN] [1795016793.916158206] [mavros.time]: TM: RTT too high for timesync: 52.46 ms.
+[BİLGİ] İrtifa sıfır noktaları alındı: pose=0.08, rel_alt=0.00, vfr_hud=1284.40
+
+[FAZ] ARM -> TAKEOFF
+════════════════════════════════════════
+Faz         : TAKEOFF
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 0.00 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.08  rel_alt=0.00  vfr_hud=1284.40
+════════════════════════════════════════
+[KOMUT] Kalkış: 5.0 m
+[mavros_node-1] [WARN] [1795016795.016635476] [mavros.time]: TM: RTT too high for timesync: 52.66 ms.
+[SONUÇ] Kalkış komutu kabul edildi (5.0 m)
+
+[FAZ] TAKEOFF -> CLIMB
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : -0.01 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.07  rel_alt=-0.01  vfr_hud=1284.39
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016796.117350127] [mavros.time]: TM: RTT too high for timesync: 56.22 ms.
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : -0.01 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.07  rel_alt=-0.01  vfr_hud=1284.39
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016797.213190540] [mavros.time]: TM: RTT too high for timesync: 57.51 ms.
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 0.31 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.39  rel_alt=0.30  vfr_hud=1284.69
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016798.317702099] [mavros.time]: TM: RTT too high for timesync: 61.09 ms.
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 2.10 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=2.18  rel_alt=2.08  vfr_hud=1286.48
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016798.725905202] [mavros.sys]: FCU: EKF3 IMU0 MAG0 in-flight yaw alignment complete
+[mavros_node-1] [WARN] [1795016799.406979964] [mavros.time]: TM: RTT too high for timesync: 51.15 ms.
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 3.78 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=3.87  rel_alt=3.77  vfr_hud=1288.17
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016800.425377127] [mavros.sys]: FCU: ArduCopter V4.6.3 (92b0cd78)
+[mavros_node-1] [INFO] [1795016800.428204093] [mavros.sys]: FCU: ChibiOS: 88b84600
+════════════════════════════════════════
+Faz         : CLIMB
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.67 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=4.75  rel_alt=4.67  vfr_hud=1289.06
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016800.432025202] [mavros.sys]: FCU: fmuv3 00280034 35335103 32363531
+[mavros_node-1] [INFO] [1795016800.434665253] [mavros.sys]: FCU: IOMCU: 0 0 411FC231
+[mavros_node-1] [INFO] [1795016800.437039094] [mavros.sys]: FCU: RCOut: PWM:1-14
+[mavros_node-1] [INFO] [1795016800.441750451] [mavros.sys]: FCU: IMU0: fast sampling enabled 8.0kHz/1.0kHz
+[mavros_node-1] [INFO] [1795016800.444007541] [mavros.sys]: FCU: Frame: QUAD/X
+[BİLGİ] Hedef irtifaya ulaşıldı (4.86 m), 10 sn bekleniyor
+
+[FAZ] CLIMB -> HOVER
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.95 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.03  rel_alt=4.95  vfr_hud=1289.34
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.94 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=5.03  rel_alt=4.95  vfr_hud=1289.34
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.93 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.02  rel_alt=4.94  vfr_hud=1289.33
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.96 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=5.05  rel_alt=4.96  vfr_hud=1289.36
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016805.386906465] [mavros.mission]: WP: item #0  F:0 C: 16 p: 0 0 0 0 x: 40.44041 y: 39.51669 z: 1284.4
+[mavros_node-1] [INFO] [1795016805.396871082] [mavros.mission]: WP: item #1  F:3 C: 22 p: 3 0 0 0 x: 0 y: 0 z: 2
+[mavros_node-1] [INFO] [1795016805.404894941] [mavros.mission]: WP: item #2  F:3 C: 21 p: 0 0 0 1 x: 40.47291 y: 39.46284 z: 2
+[mavros_node-1] [INFO] [1795016805.405228109] [mavros.mission]: WP: mission received
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.97 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.06  rel_alt=4.97  vfr_hud=1289.37
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.97 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=5.05  rel_alt=4.97  vfr_hud=1289.37
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.94 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.03  rel_alt=4.95  vfr_hud=1289.34
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 4.99 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=5.08  rel_alt=4.99  vfr_hud=1289.39
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 5.03 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.11  rel_alt=5.04  vfr_hud=1289.43
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016810.424928931] [mavros.rallypoint]: RP: mission received
+════════════════════════════════════════
+Faz         : HOVER
+Bağlantı    : BAĞLI
+Mod         : GUIDED
+Armed       : True
+İrtifa      : 5.05 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=5.13  rel_alt=5.05  vfr_hud=1289.44
+════════════════════════════════════════
+[BİLGİ] Bekleme bitti, iniş başlıyor
+
+[FAZ] HOVER -> LAND
+[KOMUT] LAND moduna geçiliyor...
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 5.05 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=5.14  rel_alt=5.05  vfr_hud=1289.45
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 4.68 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=4.76  rel_alt=4.69  vfr_hud=1289.08
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 4.31 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=4.39  rel_alt=4.32  vfr_hud=1288.71
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 3.63 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=3.72  rel_alt=3.64  vfr_hud=1288.04
+════════════════════════════════════════
+[mavros_node-1] [INFO] [1795016815.372532492] [mavros.geofence]: GF: mission received
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 3.20 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=3.28  rel_alt=3.20  vfr_hud=1287.60
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 2.52 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=2.60  rel_alt=2.52  vfr_hud=1286.92
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 2.18 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=2.26  rel_alt=2.19  vfr_hud=1286.58
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 1.64 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=1.72  rel_alt=1.65  vfr_hud=1286.04
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 1.23 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=1.31  rel_alt=1.24  vfr_hud=1285.63
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 0.66 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.75  rel_alt=0.67  vfr_hud=1285.07
+════════════════════════════════════════
+[KOMUT] Yerde ama hâlâ armed, disarm gönderiliyor...
+[SONUÇ] Disarm reddedildi
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 0.24 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=0.32  rel_alt=0.24  vfr_hud=1284.64
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 0.07 m  [pose, 0.0 sn önce]
+Ham veriler : lidar=-  pose=0.15  rel_alt=0.07  vfr_hud=1284.47
+════════════════════════════════════════
+════════════════════════════════════════
+Faz         : LAND
+Bağlantı    : BAĞLI
+Mod         : LAND
+Armed       : True
+İrtifa      : 0.06 m  [pose, 0.2 sn önce]
+Ham veriler : lidar=-  pose=0.14  rel_alt=0.06  vfr_hud=1284.46
+════════════════════════════════════════
+[mavros_node-1] [WARN] [1795016824.045233542] [mavros.param]: PR: Param STAT_FLTTIME (65535/1037): 12552 different index: 1000/1037
+[mavros_node-1] [WARN] [1795016824.049120312] [mavros.param]: PR: Param STAT_RUNTIME (65535/1037): 185144 different index: 1001/1037
+[SONUÇ] DRON İNDİ VE DISARM OLDU!
+
+[FAZ] LAND -> DONE
+
+[CLEANUP] MAVROS kapatılıyor...
+[CLEANUP] MAVROS kapatıldı.
+pi2@sancak-pi2:~$ client_loop: send disconnect: Connection reset
+PS C:\Users\ASUS>
