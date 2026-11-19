@@ -67,7 +67,7 @@ HEDEF_Y = 10.0           # y ekseni: kuzey-güney (+ kuzey)
 
 # -- Yaw (Drone'un baktığı yön) --
 #   0° = Kuzey,  90° = Doğu,  180° = Güney,  -90° (veya 270°) = Batı
-HEDEF_YAW = 0.0        # derece – hedef noktada drone hangi yöne baksın (90° = doğu)
+HEDEF_YAW = 90.0        # derece – hedef noktada drone hangi yöne baksın (90° = doğu)
 
 WAYPOINT_TOLERANCE = 0.5  # hedef noktaya bu kadar yaklaşınca "ulaştı" say (m)
 NAVIGATE_TIMEOUT = 60.0   # navigasyon zaman aşımı (sn)
