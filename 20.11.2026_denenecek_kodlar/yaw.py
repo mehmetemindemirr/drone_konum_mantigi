@@ -54,9 +54,9 @@ FCU_URL = 'udp://127.0.0.1:14550@14555'   # SITL
 #FCU_URL = '/dev/ttyS0:115200'              # Gerçek drone (Pi <-> Pixhawk seri hattı)
 
 # -- Kalkış --
-TARGET_ALT = 15.0        # metre (kalkış yüksekliği)
+TARGET_ALT = 5.0        # metre (kalkış yüksekliği)
 ALT_TOLERANCE = 0.3     # hedef irtifaya bu kadar yaklaşınca "ulaştı" say
-CLIMB_TIMEOUT = 40.0    # bu sürede irtifaya çıkamazsa inişe geç
+CLIMB_TIMEOUT = 30.0    # bu sürede irtifaya çıkamazsa inişe geç
 
 # -- Navigasyon (X, Y, Z hedefleri) --
 # Kalkış noktasına GÖRE ne kadar ilerleyeceği (metre)
@@ -67,7 +67,7 @@ HEDEF_Y = 10.0           # y ekseni: kuzey-güney (+ kuzey)
 
 # -- Yaw (Drone'un baktığı yön) --
 #   0° = Kuzey,  90° = Doğu,  180° = Güney,  -90° (veya 270°) = Batı
-HEDEF_YAW = 180.0        # derece – hedef noktada drone hangi yöne baksın (90° = doğu)
+HEDEF_YAW = 0.0        # derece – hedef noktada drone hangi yöne baksın (90° = doğu)
 
 WAYPOINT_TOLERANCE = 0.5  # hedef noktaya bu kadar yaklaşınca "ulaştı" say (m)
 NAVIGATE_TIMEOUT = 60.0   # navigasyon zaman aşımı (sn)
