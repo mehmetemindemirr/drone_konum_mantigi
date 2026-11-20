@@ -18,6 +18,8 @@ Akış (durum makinesi):
 Koordinat sistemi (MAVROS ENU - East North Up):
   x = Doğu (+ doğu, - batı) | y = Kuzey (+ kuzey, - güney) | z = Yukarı
 Yaw (ENU): 0° = DOĞU, 90° = KUZEY, 180° = BATI, -90° = GÜNEY
+
+bu kod gerçek hayatta denendi ve irtifa verisi geldi.
 """
 import subprocess
 import time
